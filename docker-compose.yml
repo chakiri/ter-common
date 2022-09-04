@@ -1,0 +1,10 @@
+version: '3.9'
+
+services:
+  php:
+    build:
+      context: ./
+      dockerfile: ./.docker/php/Dockerfile
+    container_name: ter_common
+    volumes:
+      - .:/home/wwwroot/ter-common
